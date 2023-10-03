@@ -1,0 +1,320 @@
+body {
+   margin: 0 auto;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: Arial, Helvetica, sans-serif;
+   font-size: 14px;
+   max-width: 100vw;
+   min-width: 320px;
+   background-color: #000;
+   color: #fff;
+}
+.header {
+   background: url("../images/header_bg.jpg") no-repeat right/cover;
+   width: calc(100% - 60px);
+   max-height: 1020px;
+   min-height: 630px;
+   height: calc(100vh - 100px);
+   padding: 80px 30px ;
+   display: grid;
+   grid-template-columns: 2fr 1.3fr;
+   gap: 60px;
+   position: relative;
+}
+.header__inner {
+   display: flex;
+   justify-content: flex-end;
+}
+.container {
+   max-width: 700px;
+}
+.menu {
+   display: flex;
+   justify-content: flex-end;
+   gap:15px;
+}
+.menu__burger-menu {
+   display: none;
+   font-size: 30px;
+}
+.menu__list {
+   list-style-type: none;
+   margin: 0;
+   padding: 0;
+   display: flex;
+   justify-content: space-between;
+   gap:15px;
+}
+.menu__list-item {
+   font-size: 13px;
+   line-height: 1.2;
+   text-transform: uppercase;
+   letter-spacing: 0.05em;
+}
+.menu__link {
+   color: #fff;
+   text-decoration: none;
+   transition: all 0.4s;
+}
+.menu__link:hover {
+   color: #f23005;
+   
+}
+.header__content {
+   margin-top: 190px;
+}
+.header__slider {
+   display: flex;
+   flex-direction: column;
+   align-items: flex-end;
+}
+.header__slider-button-block {
+   display: flex;
+   justify-content: flex-end;
+   gap: 15px
+}
+.header__slider-button {
+   width: 35px;
+   height: 35px;
+   border: 1px solid #fff;
+   border-radius: 50%;
+   background: transparent;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   color:#fff;
+   font-size: 20px;
+   cursor: pointer;
+   transition: all 0.3s;
+}
+.header__slider-button:hover {
+   background: #f23005;
+}
+.header__slider-button:active {
+   transform: scale(0.95);
+}
+.header__slider-title {
+   font-size: 36px;
+   font-weight: 100;
+   line-height: 79px;
+   text-transform: uppercase;
+   letter-spacing: 0.1em;
+   text-align: right;
+   text-align-last: right;
+
+}
+.header__slider-title--font {
+   font-size: 80px;
+   font-weight: 700;
+   letter-spacing: normal;
+}
+.header__slider-title--text-color {
+   color:#f23005;
+}
+.header__slider-description {
+   text-align: justify;
+   text-align-last: right;
+}
+.header__button-inner {
+   display: flex;
+   justify-content: flex-end;
+   gap:25px;
+   margin: 30px 0;
+}
+.header__button {
+   padding: 20px 0;
+   width: 160px;
+   font-size: 11px;
+   font-weight: 700;
+   text-transform: uppercase;
+   color: #fff;
+   background: transparent;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   border: 1px solid #fff;
+   cursor: pointer;
+   transition: all 0.3s;
+}
+.header__button:hover {
+   background: #f23005;
+}
+.header__button:active {
+   transform: scale(0.95);
+}
+.header__visual-effect {
+   width:100%;
+   height: 20%;
+   background: linear-gradient(transparent, #000);
+   position: absolute;
+   left: 0;
+   bottom: 0;
+}
+.interactive-block {
+   padding: 30px;
+   display: grid;
+   grid-template-columns: 3fr 1fr;
+   /* display: flex;
+   flex-direction: column; */
+   gap: 30px;
+}
+.interactive-block__text-content {
+   display: flex;
+   flex-direction: column;
+   gap: 95px;
+}
+.interactive-block__about-inner,
+.interactive-block__readme-inner {
+   display: flex;
+   flex-direction: column;
+   align-items: end;
+   gap: 35px;
+}
+.title-container {
+   height: 90px;
+   width: 120px;
+   background-color: #f23005;
+   padding: 15px 0;
+   text-align: center;
+}
+.title-container__title {
+   margin: 0;
+   padding: 0;
+   font-size: 24px;
+   line-height: 1.2;
+   font-weight: 700;
+   letter-spacing: 0.025em;
+}
+.interactive-block__description {
+   text-align: justify;
+   text-align-last: right;
+}
+.laptop-container {
+   width:100%;
+   font-size: 11px;
+   
+   letter-spacing: 0.145em;
+   position: relative;
+}
+
+.interactive-block__laptop-image {
+   width:100%;
+   height: 100%;
+   object-fit: cover;
+}
+.interactive-block__laptop-audioplayer-container {
+   position: absolute;
+   left:13.5%;
+   top:5.5%;
+   width:74%;
+   height:70%;
+   background: rgba(0, 0, 0, 0.719);
+   /* border-radius: 10px; */
+}
+.counter {
+   height: 300px;
+   width: 100%;
+   background-color: #f23005;
+}
+.features {
+   height: 400px;
+   padding: 30px;
+   background: url("../images/guitar_bg.jpg") no-repeat right/contain; 
+   background-color:#0A0A0A;
+   position: relative;
+}
+.footer {
+   min-height: 190px;
+   width: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.footer__inner {
+   display: flex;
+   justify-content: flex-end;
+}
+@media screen and (max-width:1245px) {
+   .header__content {
+      margin-top: 100px;
+   }
+   .header__slider-title {
+      font-size: 30px;
+      line-height: 60px;
+   }
+   .header__slider-title--font {
+      font-size: 70px;
+   }
+   .features {
+      height: 400px;
+   }
+}
+@media screen and (max-width:1200px) {
+   .interactive-block {
+      padding: 30px;
+      display: flex;
+      flex-direction: column;
+   }
+   .interactive-block__about-inner,
+   .interactive-block__readme-inner {
+      flex-direction: row;
+      align-items: end;
+      gap:35px;
+   }
+}
+
+@media screen and (max-width:1105px) {
+   .header {
+      background: url("../images/header_bg.jpg") no-repeat center/cover;
+      max-height: 600px;
+      padding: 70px 30px ;
+      grid-template-columns: 1.8fr 1.3fr;
+   }
+   .header__content {
+      margin-top: 80px;
+   }
+   .header__slider-title {
+      font-size: 25px;
+      line-height: 50px;
+   }
+   .header__slider-title--font {
+      font-size: 50px;
+   }
+   .header__button-inner {
+      margin: 20px 0;
+   }
+}
+@media screen and (max-width:530px) {
+   .header {
+      width: calc(100% - 30px);
+      display: flex;
+      flex-direction: column;
+      padding: 30px 10px ;
+   }
+   .interactive-block__text-content {
+      gap: 40px;
+   }
+   .interactive-block__about-inner,
+   .interactive-block__readme-inner {
+      display: block
+   }
+   .title-container {
+      float: left;
+      margin: 10px;
+   }
+   .menu {
+      display: none;
+   }
+   .menu__burger-menu {
+      display: block;
+   }
+   .menu__list {
+      flex-direction: column;
+      margin: 20px;
+   }
+}
+@media screen and (max-width:410px) {
+ .laptop-container{
+   margin-top: 20px;
+ }
+}

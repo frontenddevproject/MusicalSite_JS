@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="stylesheet" href="./css/iconsfont.css" type="text/css">
+      <link rel="stylesheet" href="./css/styles.css" type="text/css" />
+      <link rel="stylesheet" href="./css/audioplayer_styles.css" type="text/css" />
+      <link rel="stylesheet" href="./css/card.css" type="text/css" />
+      
+      <title>Musical site with audioplayer</title>
+   </head>
+   <body>
+      <header class="header">
+         <div class="header__inner">
+            <div class="container">
+               <div class="header__menu">
+                  <nav class="menu">
+                     <ul class="menu__list">
+                        <li class="menu__list-item"><a class="menu__link" href="#">Home</a></li>
+                        <li class="menu__list-item"><a class="menu__link" href="#">About</a></li>
+                        <li class="menu__list-item"><a class="menu__link" href="#">Features</a></li>
+                        <li class="menu__list-item"><a class="menu__link" href="#">Works</a></li>
+                        <li class="menu__list-item"><a class="menu__link" href="#">Team</a></li>
+                        <li class="menu__list-item"><a class="menu__link" href="#">Prices</a></li>
+                        <li class="menu__list-item"><a class="menu__link" href="#">Contact</a></li>
+                     </ul>
+                  </nav>
+                  <div class="menu__burger-menu _icon-burger-menu">
+               </div>
+               <div class="header__content">
+                  <div class="container">
+                     <div class="header__content-inner">
+                        <div class="header__slider">
+                           <div class="header__slider-button-block">
+                              <button class="header__slider-button header__slider-button--left">&#10216;</button>
+                              <button class="header__slider-button header__slider-button--right">&#10217;</button>
+                           </div>
+                           <h1 class="header__slider-title">
+                              Welcome to the world of <span class="header__slider-title--font"><span class="header__slider-title--text-color">Freedom</span> music</span>
+                           </h1>
+                           <p class="header__slider-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque condimentum, tortor convallis eleifend dapibus, quam sem commodo lorem, vitae suscipit sapien purus dignissim orci. Ut vulputate scelerisque sapien tempor dignissim. Vivamus accumsan condimentum rutrum. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec auctor lectus et nibh tincidunt, et dignissim lectus scelerisque. Maecenas tincidunt fermentum tristique. Duis sem odio, porttitor id sapien ullamcorper, sagittis hendrerit tortor. Nam aliquam posuere facilisis. Duis ornare sem tellus, in sagittis augue rutrum id.</p>
+                        </div>
+                        <div class="header__button-inner">
+                           <button class="header__button header__button--start">Start now</button>
+                           <button class="header__button header__button--learn">Learn more</button>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="header__visual-effect"></div>
+      </header>
+      <main class="main">
+         <div class="interactive-block">
+            <section class="interactive-block__laptop">
+               <div class="laptop-container">
+                  <img class="interactive-block__laptop-image" src="./images/Laptop_copy.webp" alt="laptop">
+                  <div class="interactive-block__laptop-audioplayer-container">
+                     <div class="interactive-block__audioplayer">
+                        <div class="audioplayer__top-panel">
+                           <div class="audioplayer__top-panel-container">
+                              <div class="audioplayer__top-panel-logo">
+                                 <h3><span>Freedom</span>music</h3> 
+                              </div>
+                              <div class="audioplayer__top-panel-search">
+                                 <input id="inputArtistName" class="audioplayer__input" type="text" placeholder="Enter artist's name">
+                                 <button id="search-btn" class="audioplayer__top-panel-search-btn _icon-search-btn"></button>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="audioplayer__main-section">
+                           <div class="audioplayer__card-section" id="cards-output">You can see Search Result here</div>
+                           <div class="audioplayer__playlist">
+                              <h2 class="audioplayer__playlist-title">Playlist</h2>
+                              <div class="audioplayer__playlist-output">
+                                 <audio class="audioplayer-audio"></audio>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="audioplayer__controls">
+                           <div class="audioplayer__controls-button">
+                              <button class="audioplayer__button audioplayer__button--prev _icon-prev-btn"></button>
+                              <button class="audioplayer__button audioplayer__button--play _icon-play-btn"></button>
+                              <button class="audioplayer__button audioplayer__button--next _icon-next-btn"></button>
+                           </div>
+                           <div class="audioplayer__controls-range-block">
+                              <!-- <span class="audioplayer__controls-track-current-time"><span id="minCount">0</span>:<span id="secCount">0</span></span> -->
+                              <div class="wrapper">
+                                 <input type = "range" min = "0" max = "100" value = "30" class = "slider" >
+                                 <div class="progress"></div>
+                               </div>
+                              <span class="audioplayer__controls-track-duration"></span>
+                           </div>
+                           <div class="audioplayer__controls-sorting">
+                              <button class="audioplayer__button audioplayer__button--sort _icon-sort-btn"></button>
+                           </div>
+                           <div class="audioplayer__controls-volume">
+                              <button class="audioplayer__button audioplayer__button--muted _icon-mute-btn"></button>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>   
+            </section>
+            <div class="interactive-block__text-content">
+               <section class="interactive-block__about">
+                  <div class="container">
+                     <div class="interactive-block__about-inner">
+                        <div class="title-container">
+                           <h3 class="title-container__title">
+                              About us
+                           </h3>
+                           <span class="title-container__subtitle">#freedommusic</span>
+                        </div>
+                        <p class="interactive-block__description">
+                           Sit amet, consectetur adipiscing elit. Pellentesque condimentum, tortor convallis eleifend dapibus, quam sem commodo lorem, vitae suscipit sapien purus dignissim orci. Ut vulputate scelerisque sapien tempor dignissim. Vivamus accumsan condimentum rutrum. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec auctor lectus et nibh tincidunt, et dignissim lectus scelerisque. Maecenas tincidunt fermentum tristique. Duis sem odio, porttitor id sapien ullamcorper, sagittis hendrerit tortor. Nam aliquam posuere facilisis. Duis ornare sem tellus, in sagittis augue rutrum id.
+                        </p>
+                     </div>
+                  </div>
+               </section>
+               <section class="interactive-block__readme">
+                  <div class="container">
+                     <div class="interactive-block__readme-inner">
+                        <div class="title-container">
+                           <h3 class="title-container__title">
+                              Readme
+                           </h3>
+                           <span class="title-container__subtitle">#freedommusic</span>
+                        </div>
+                        <p class="interactive-block__description">
+                           Sit amet, consectetur adipiscing elit. Pellentesque condimentum, tortor convallis eleifend dapibus, quam sem commodo lorem, vitae suscipit sapien purus dignissim orci. Ut vulputate scelerisque sapien tempor dignissim. Vivamus accumsan condimentum rutrum. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec auctor lectus et nibh tincidunt, et dignissim lectus scelerisque. Maecenas tincidunt fermentum tristique. Duis sem odio, porttitor id sapien ullamcorper, sagittis hendrerit tortor. Nam aliquam posuere facilisis. Duis ornare sem tellus, in sagittis augue rutrum id.
+                        </p>
+                     </div>
+                  </div>
+               </section>
+            </div>
+         </div>
+
+         <section class="features">
+            <div class="container">
+               <div class="features-inner">
+                  <div class="feature__content">
+                     <h3 class="features__content-title">
+                        Lorem ipsum dolor sit amet.
+                     </h3>
+                     <p class="features__content-description">
+                        Lorem ipsum dolor sit amet consectetur adipiscing elit. Pellentesque condimentum, tortor convallis eleifend dapibus, quam sem commodo lorem, vitae suscipit sapien purus dignissim orci. Ut vulputate scelerisque sapien tempor dignissim. Vivamus accumsan condimentum rutrum. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec auctor lectus et nibh tincidunt, et dignissim lectus scelerisque. Maecenas tincidunt fermentum tristique. Duis sem odio, porttitor id sapien ullamcorper, sagittis hendrerit tortor. Nam aliquam posuere facilisis. Duis ornare sem tellus, in sagittis augue rutrum id.
+                     </p>
+                  </div>
+               </div>
+            </div>
+            <div class="feature__visual-effect"></div>
+         </section>
+      </main>
+      <footer class="footer">
+         <div class="container">
+            <div class="footer-inner">
+               <div class="footer-menu">
+                  <ul class="menu__list">
+                     <li class="menu__list-item"><a class="menu__link" href="#">Home</a></li>
+                     <li class="menu__list-item"><a class="menu__link" href="#">About</a></li>
+                     <li class="menu__list-item"><a class="menu__link" href="#">Features</a></li>
+                     <li class="menu__list-item"><a class="menu__link" href="#">Works</a></li>
+                     <li class="menu__list-item"><a class="menu__link" href="#">Team</a></li>
+                     <li class="menu__list-item"><a class="menu__link" href="#">Prices</a></li>
+                     <li class="menu__list-item"><a class="menu__link" href="#">Contact</a></li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+      </footer>
+   
+      <script src="js/scripts.js"></script>
+   </body>
+</html>
